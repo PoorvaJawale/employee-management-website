@@ -2,7 +2,6 @@
 {% block title %}Dashboard{% endblock %}
 {% block body %}
 
-<!-- START of your pretty styled CRUD dashboard -->
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -15,7 +14,6 @@
                     </div>
                 </div>
 
-                <!-- Flash messages -->
                 {% with messages=get_flashed_messages() %}
                 {% if messages %}
                     {% for message in messages %}
@@ -29,7 +27,6 @@
                 {% endif %}
                 {% endwith %}
 
-                <!-- Employee Table -->
                 <table class="table table-hover table-dark">
                     <thead>
                         <tr>
@@ -53,7 +50,7 @@
 
                             </td>
                         </tr>
-                        <!-- Edit Modal -->
+                   
 <div id="editModal{{ row.id }}" class="modal fade" role="dialog" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -89,7 +86,6 @@
                     </tbody>
                 </table>
 
-                <!-- Add Modal -->
                 <div class="modal fade" id="addModal" tabindex="-1" role="dialog">
                     <div class="modal-dialog">
                         <div class="modal-content">
