@@ -1,0 +1,28 @@
+<h2>Welcome, {{ session['user_name'] }}</h2>
+<a href="{{ url_for('logout') }}" class="btn btn-danger mb-3">Logout</a>
+
+<table class="table table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for employee in employees %}
+    <tr>
+      <td>{{ employee.id }}</td>
+      <td>{{ employee.name }}</td>
+      <td>{{ employee.email }}</td>
+      <td>
+        <a href="{{ url_for('update', id=employee.id) }}" class="btn btn-warning btn-sm">Edit</a>
+        <a href="{{ url_for('delete', id=employee.id) }}" class="btn btn-danger btn-sm">Delete</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<a href="{{ url_for('add_data') }}" class="btn btn-success">Add New Employee</a>
