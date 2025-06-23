@@ -27,7 +27,7 @@ A secure and stylish web application to manage employee records using Python's F
 
 ``
 git clone https://github.com/PoorvaJawale/employee-management-website.git
-cd your-repo-name ``
+cd employee-management-website ``
 
 ###2. Create virtual environment 
 
