@@ -25,29 +25,29 @@ A secure and stylish web application to manage employee records using Python's F
 
 ###1. Clone the repository
 
-``bash
-git clone https://github.com/your-username/your-repo-name.git
+``
+git clone https://github.com/PoorvaJawale/employee-management-website.git
 cd your-repo-name ``
 
 ###2. Create virtual environment 
 
-``bash
+``
 python -m venv venv
 source venv/bin/activate ``
 
 ###3. Install dependencies
 
-``bash
+``
 pip install -r requirements.txt `` <br>
 
 if requirements.txt is not available, then manually install: <br>
 
-``bash
+``
 pip install flask flask_sqlalchemy flask_bcrypt ``
 
 ###4. Run the application
 
-``bash
+``
 python app.py `` <br>
 
 Open your browser and go to http://127.0.0.1:5000/login
